@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container" id="login-container">
+    <h2>Login</h2>
+    <form id="loginForm">
+      <input type="text" id="username" placeholder="Username" required>
+      <input type="password" id="password" placeholder="Password" required>
+      <button type="submit" id="submit" onclick="init()">Login</button>
+    </form>
+    <!-- <p>Don't have an account? <a href="register.html">Register here</a></p> -->
+  </div>
+
+  <script>
+    
+
+// JavaScript code for handling form submissions and page redirections
+
+// Function to handle login form submission
+document.getElementById("loginForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    // Perform login authentication here
+    // Redirect to welcome page if authentication is successful
+    window.location.href = "welcome.html";
+  });
+  
+  // Function to handle register form submission
+  document.getElementById("registerForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    // Perform registration logic here
+    // Redirect to login page after successful registration
+    window.location.href = "login.html";
+  });
+  
+  // Function to redirect to the monthly activity page
+  function redirectToMonthlyActivity() {
+    window.location.href = "monthly_activity.html";
+  }
+
+
+
+// JavaScript code for handling student image click
+document.querySelectorAll(".student img").forEach(student => {
+  student.addEventListener("click", function() {
+    const name = this.dataset.name;
+    const roll = this.dataset.roll;
+    const gender = this.dataset.gender;
+    const grade = this.dataset.grade;
+
+    const studentInfoHTML = `
+    <div class="student-info-container">
+    <h2>Student Profile</h2>
+    <table>
+        <tr>
+            <th>Attribute</th>
+            <th>Details</th>
+        </tr>
+        <tr>
+            <td><strong>Name</strong></td>
+            <td>${name}</td>
+        </tr>
+        <tr>
+            <td><strong>Roll No</strong></td>
+            <td>${roll}</td>
+        </tr>
+        <tr>
+            <td><strong>Gender</strong></td>
+            <td>${gender}</td>
+        </tr>
+        <tr>
+            <td><strong>Grade</strong></td>
+            <td>${grade}</td>
+        </tr>
+        <tr>
+            <td><strong>Address</strong></td>
+            <td>Hinjewadi, Pune</td>
+        </tr>
+        <tr>
+            <td><strong>Email</strong></td>
+            <td>${name}@example.com</td>
+        </tr>
+    </table>
+</div>
+    `;
+
+    document.getElementById("studentInfo").innerHTML = studentInfoHTML;
+  });
+});
+  
+  
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>

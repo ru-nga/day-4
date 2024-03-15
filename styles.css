@@ -1,0 +1,297 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+
+.container {
+    width: 100vw;
+    margin: 100px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#login-container{
+    margin-top: 25vh;
+    width: 38vw;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+input[type="text"],
+input[type="password"],
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+p {
+    text-align: center;
+}
+
+a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#monthly-chart-btn {
+    background: #3d3dba;
+    color: white;
+    margin-left: 24vw;
+    cursor: pointer;
+}
+
+
+
+
+/* Basic styling for the header */
+header {
+    background-color: #f0f0f0;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .logo img {
+    height: 50px; /* Adjust height as needed */
+  }
+  
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  /* Basic styling for student images */
+  .student {
+    margin-bottom: 20px;
+    text-align: center; /* Center-align student images */
+  }
+  
+  .student img {
+    width: 150px; /* Adjust width as needed */
+    height: auto;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .student img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Basic styling for student info section */
+  #studentInfo {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    /* text-align: center; Center-align student information */
+  }
+  
+  #studentInfo h2 {
+    margin-bottom: 10px;
+  }
+  
+  #studentInfo p {
+    margin-bottom: 5px;
+  }
+  
+  /* Additional styling */
+  .student-info-container {
+    text-align: left; /* Align text to the left */
+  }
+  
+  .menu-btn img {
+    width: 35px;
+    cursor: pointer;
+  }
+  
+  .logo img {
+    width: 80px;
+  }
+  
+  
+  
+  
+  
+  .student-info-container {
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+  }
+  
+  .student-info-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .student-info-container table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .student-info-container th,
+  .student-info-container td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .student-info-container th {
+    background-color: #666;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .student-info-container tr:last-child td {
+    border-bottom: none;
+  }
+  
+  .student-info-container td {
+    vertical-align: top;
+  }
+  
+  .student-info-container strong {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .student-info-container h2 {
+    margin-left: 28vw;
+  }
+  
+  header h2 {
+    color: black;
+    font-weight: 400;
+    font-size: 26px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  #subjectDropdown {
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .report-card {
+    display: none;
+  }
+  
+  .report-card.active {
+    display: block;
+    margin-top: 20px;
+  }
+  
+  .card-header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px 5px 0 0;
+  }
+  
+  .card-body {
+    padding: 66px;
+    background-color: #fff;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-body p {
+    margin: 5px 0;
+  }
+  
+  .grade {
+    font-weight: bold;
+    color: #28a745;
+  }
+  
+  .grade.bad {
+    color: #dc3545;
+  }
+  
+
+
+div#historyReportCard {
+    padding: 60px;
+    background-color: rgb(50, 50, 50);
+}
+
+div#scienceReportCard {
+    padding: 60px;
+    background-color: rgb(50, 50, 50);
+
+}
+
+div#mathReportCard {
+    padding: 60px;
+    background-color: rgb(50, 50, 50);
+
+}
